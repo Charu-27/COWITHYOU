@@ -1,36 +1,126 @@
-.Container1{
+.Container6{
     display:flex;
     flex-direction:column;
-    align-items: center;
     width:100%;
     height:100%;
-    background-color:white
+    flex-wrap: wrap;
+    justify-content: top;
+    background-size: absolute;
+    background-color: white;
+    
 }
-#MENU{
+.MENU{
+    margin-top:1rem;
     height:50px;
-    width:200px;
+    width:25rem;
     font-size: 30px;
     font-weight: bold;
     color:white;
     border:5px solid white;
-    background-color: rgb(197,42,127);
+    background-color:rgb(126, 72, 85);
+    align-self: center;
+    
 }
-#head{
-    text-align: center;
-    font-size: 60px;
+
+.image{
+    background-image: url('C:\Users\Charu jain\Desktop\cowithyou project\src\components\Patient\medicine.jpg');
+    align-self: center;
+    justify-content: center;
+    width:100%;
+    
 }
 #intro{
     color:rgb(106, 21, 202);
     font-size: 50px;
+    text-decoration: underline;
+    align-self: center;
+    font-family: cursive;
+    
 }
-#header1{
-    background-color: rgb(23,169,236);
-    border-radius: 5px;
+.header6{
+    font-size: 2rem;
     border:5px solid white;
-    font-size: 25px;
-    font-weight: bold;
-    width:100%;
-    align-content: center;
     color:white;
-    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height:4rem;
+    width:100%;
+    background-color:rgb(23, 169, 236);
+    align-self: top;
+}
+.search-bar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: double;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+@media screen and (max-width:600px) {
+    .Container6{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:100%;
+        flex-wrap: wrap;
+        background-size: cover;
+        background-color: white;
+        
+    }
+    .MENU{
+        height:2rem;
+        width:15rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-top: 6rem;
+        color:white;
+        border:5px solid white;
+        background-color:rgb(126, 72, 85);
+        align-self: center;
+        
+    }
+    
+    #intro{
+        margin-top: 2rem;
+        color:rgb(106, 21, 202);
+        font-size: 1.5rem;
+        text-decoration: underline;
+        align-self: center;
+        font-family: cursive;
+        
+    }
+    .header6{
+        font-size: 1rem;
+        border:1px solid white;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        height:4.5rem;
+        width:100%;
+    justify-content: center;
+    align-self: top;
+        background-color:rgb(23, 169, 236);
+    }  
+    .image{
+        margin-top: 3rem;
+        width: 100%;
+        height: 17rem;
+        background-repeat: no-repeat;
+    }
+    .search-bar input[type=text] {
+        float: center;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-top: 2px;
+        padding: 14px;
+        font-size: 6px;
+
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    
 }

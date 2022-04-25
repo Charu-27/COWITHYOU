@@ -1,56 +1,182 @@
-.container{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    background-color:white
+.container2{
+    margin:0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color:white;
 }
-#head{
+#header2{
+    font-size: 2rem;
+    border:5px solid white;
+    color:white;
+    font-weight: bold;
     text-align: center;
-    font-size: 60px;
-}
-#name #email #phone #password #cpassword{
+    font-family: 'Courier New', Courier, monospace;
+    height:3.2rem;
     width:100%;
-    height:30%;
+    background-color:rgb(23, 169, 236);}
+#heading2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Gill Sans, sans-serif,italic; 
+    font-weight: bold; 
+    
 }
+
+#name2 #email2 #phone2 #password2 #cpassword2{
+    width:80%;
+    height:20%;
+    font-weight:bolder ;
+    
+}
+
 .Details{
-    width:100%;
-    height:100%;
+    width:90%;
+    height:30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color:black;
     font-weight: bold;
+    align-content: center;
+    flex-wrap: wrap;
+    
 }
-#Submit >input{
-    width:100px;
-    height:40px;
-    margin:auto;
-    border:5px solid white;
+#signup{
+    width:130px;
+    height:35px;
+   
+    font-size: 1rem;
     color:white;
-    font-weight: bold;
+    margin:30px;
+    background-color: rgb(23, 169, 236);
+    border-radius: 5px;
+}
+#Submit{
     display: flex;
-    background-color: rgb(23,169,236);
-    align-self: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
 }
-@media only screen and (max-width:320px){
-    #form{
+#Submit>a{
+    margin-top: 2.5rem;
+}
+
+.form2{
+    margin: auto;
+    width:40%;
+    height:80%;
+    border:5px solid rgb(23, 169, 236);
+    box-shadow: 12px 15px 5px grey;
+    border-radius:25px;
+    padding: 0.5rem;
+    justify-content: center;
+    align-content: center;
+flex-wrap: wrap;}
+
+.Logo1{
+    height:40px;
+    width:40px;
+}
+.Logo2{
+    height:40px;
+    width:40px;
+}
+@media screen and (max-width: 900px){
+    .container2{
+        margin:0;
         width:100%;
-        height:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color:white;
     }
+    #header2{
+        font-size: 1.5rem;
+        border:3px solid white;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        height:6rem;
+        width:100%;
+    justify-content: center;
+        background-color:rgb(23, 169, 236);}
+        
+.Logo1{
+    height:1.5rem;
+    width:1.5rem;
 }
-#form{
-    width:70%;
-    height:60%;
+.Logo2{
+    height:1.5rem;
+    width:1.5rem;
+}
+.Details{
+    width:60%;
+    height:100%;
     display: flex;
     flex-direction: column;
-    background-color:white;
-    border:4px solid white;
-    box-shadow: 15px 20px  20px grey;
-    border-radius:50px;
+    color:black;
+    font-weight: bolder;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: larger;
+    
+    
 }
-#header{
+
+.form2{
+    margin:auto;
+    width:70%;
+    height:75%;
+    display: flex;
+    border:5px solid rgb(23, 169, 236);
+    box-shadow: 12px 15px 5px grey;
+    border-radius:25px;
+    padding: 0.3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+}
+#heading2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Gill Sans, sans-serif,italic; 
+    font-weight: bold; 
+    
+}
+#Submit{
+    display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+#Submit>a{
+    margin-top: 0.7rem;
+     text-align: center;
+}
+#signup{
+    width:10rem;
+    height:1.8rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    color:white;
+    margin:10px;
+    background-color: rgb(23, 169, 236);
+    border-radius: 3px;
+}
+#name2 #email2 #phone2 #password2 #cpassword2{
     width:100%;
     height:20%;
+    font-weight:bolder ;
+    font-size: 5rem;
+    
+}
+
+
+
 }

@@ -10,19 +10,27 @@ const Gateway=()=>{
         Namsthey SAVES your life... Shake hand SHAKES your life... 
         <img className="Logo23" src={CoWithYou}/>
    </div>
-   <h1 style={{color:"rgb(150,17,202)",margin:"auto"}}>Choose Your Option</h1>
+
+   <h2>Choose Your Option</h2>
    <div className="Options">
+       <div >
        <a href="/Donor"><div className="OpDonor">
-       </div></a>
+      </div></a>
+      <h3 id="p1">DONOR</h3></div>
+      <div>
        <a href="AboutUs"><div className="AboutUs">
        </div></a>
-       <a href="/Patient"><div className="OpPatient"></div></a>
-   </div>
-   <div className="banner">
-   <h3 style={{color:"rgb(197,42,127)"}}>Donor</h3>
-   <h3 style={{color:"rgb(197,42,127)"}}>AboutUs</h3>
-   <h3 style={{color:"rgb(197,42,127)"}}>Patient</h3>
-   </div>
+       <h3 id="p2">ABOUT US</h3>
+       </div>
+       <div >
+       <a href="/Patient"><div className="OpPatient" ></div></a>
+      <h3 id="p3"> PATIENTS</h3></div>
+      <div>
+      <a href="/Prediction"><div
+       className="Prediction"></div>
+       <h3 id="p4">Covid Prediction</h3>
+       </a>
+   </div></div>
    </div>
         </>
     )

@@ -3,7 +3,7 @@ import "./Card.css"
 const Card=(props)=>{
     return(
         <>
-        <div id="Container1">
+        <div id="Container7">
         <h3>{props.Pname}</h3>
         <div id="Core">
         <div id="PARA">
@@ -13,11 +13,11 @@ const Card=(props)=>{
             <h4 className="para">Contact No.</h4>
             <h4 className="para">Description</h4>
         </div>
-        <div id="Details">
+        <div id="Details3">
             <h4 className="para2">{props.Pname}</h4>
             <h4 className="para2">{props.PMD}</h4>
             <h4 className="para2">{props.PED}</h4>
-            <h4 className="para2"style={{fontSize:"25px"}}>{props.Contact}</h4>
+            <h4 className="para2">{props.Contact}</h4>
             <h4 className="para3">{props.Description}</h4>
         </div>
         </div>

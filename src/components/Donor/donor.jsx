@@ -1,6 +1,8 @@
 import react,{useState} from "react";
 import "./donor.css"
-import CoWithYou from "./CoWithYou Logo.png"
+import CoWithYou from "./CoWithYou Logo.png";
+import "@chakra-ui/react"
+import {FormControl,Input,InputGroup } from "@chakra-ui/react";
 const Donor=()=>{
     const [pro,setProduct]=useState({
         Pname:null,
@@ -42,44 +44,55 @@ const Donor=()=>{
     }
     return(
         <>
-        <div className="container" id="container">
-        <div id="header">
-        <img className="Logo1"src={CoWithYou}></img>Namsthey SAVES your life... Shake hand SHAKES your life... 
-        <img className="Logo2" src={CoWithYou}></img></div>
-        <div className="form" id="form">
-        <div id="head">
+        <div className="container4" >
+        <div className="header4">
+        <img id="Logo1"src={CoWithYou}></img>Namsthey SAVES your life... Shake hand SHAKES your life... 
+        <img id="Logo2" src={CoWithYou}></img></div>
+        <div className="Form3" >
+        <div id="heading3">
         Upload product details on CoWithYou
         </div>
-                <form method="POST" className="form2" id="form2">
-                <div className="Details">
-                <div id="Pname">
-                Product Name:-
-                    <input type="text" name="Pname"  id="Pname" placeholder="Enter product's name" value={pro.Pname}onChange={handleInputs}/>
-                    </div>
+        
+                <form method="POST" classname="form3" >
+                <div id="P-name">
+                Product Name:-  </div>
+                <FormControl isRequired>
+                <InputGroup>
+                    <Input type="text" name="Pname"  id="Pname" placeholder="Enter product's name" value={pro.Pname}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
                     <div id="PMD">
-                    Manufacturing Date:-
-                    <input type="text" name="PMD" placeholder="Enter the product manufacture's date" value={pro.PMD}onChange={handleInputs}/>
-                    </div>
+                    Manufacturing Date:-   </div>
+                    <FormControl isRequired>
+                    <InputGroup>
+                    <Input type="text" name="PMD" placeholder="Enter the product manufacture's date" value={pro.PMD}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
                     <div id="PED" >
-                    Expiry date:-
-                    <input type="text" name="PED"  placeholder="What is the expiry date of product" value={pro.PED}onChange={handleInputs}/>
-                    </div>
-                    <div id="Contact">
-                    Contact
-                    <input type="number" name="Contact" id="Contact" placeholder="Enter your contact number" value={pro.Contact}onChange={handleInputs}/>
-                    </div>
+                    Expiry date:-  </div>
+                    <FormControl isRequired>
+                    <InputGroup>
+                    <Input type="text" name="PED"  placeholder="What is the expiry date of product" value={pro.PED}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
+                    <div id="Contact-info">
+                    Contact</div>
+                    <FormControl isRequired>
+                    <InputGroup>
+                    <Input type="number" name="Contact" id="Contact" placeholder="Enter your contact number" value={pro.Contact}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
                     <div id="PDescription">
-                    Product Description
-                    <input type="text" name="PDescription" placeholder="Describe your product in brief with all essential features.Would be great if you mention whether it is used before or not and how long" value={pro.PDescription} onChange={handleInputs}/>
-                    </div>
+                    Product Description </div>
+                    <FormControl isRequired>
+                    <InputGroup>
+                    <Input type="text" name="PDescription" placeholder="Describe your product in brief with all essential features." value={pro.PDescription} onChange={handleInputs}/>
+                    </InputGroup></FormControl>
                     <div id="Submit">
-                    <input type="submit" name="Donor" id="Donor" className="form-submit" value="UPLOAD" onClick={PostData}/>
+                    <input type="submit" className="submit-detail" value="UPLOAD" onClick={PostData}/>
                     </div>
                     <a href="/gateway">Back to Menu</a>
-                    </div>
+                   
                 </form>
-        </div>
-        </div>
+                </div> 
+                </div>
+
         </>
     )
 }

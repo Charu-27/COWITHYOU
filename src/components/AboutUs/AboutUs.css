@@ -1,8 +1,6 @@
-.container4{
-    display:flex;
-    flex-direction:column;
-    width:100vw;
-    height:100vh;
+.container5{
+    width:100%;
+    height:100%;
     font-size: 30px;
     background-color:white
 }
@@ -13,22 +11,114 @@
     font-size: 30px;
     font-weight: bold;
 }
-#header4{
-    font-size: 30px;
+#header5{ font-size: 2rem;
     border:5px solid white;
     color:white;
     font-weight: bold;
     text-align: center;
-    font-style: italic;
-    height:2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    height:4rem;
     width:100%;
-    background-color:rgb(23, 169, 236);
+    background-color:rgb(23, 169, 236);   
 }
-.Logo14{
-    height:65px;
-    width:65px;
+.Logo1{
+    height:3rem;
+    width:3rem;
 }
-.Logo24{
-    height:65px;
-    width:65px;
+.Logo2{
+    height:3rem;
+    width:3rem;
+}
+#heading5{
+ color: rgb(126, 72, 85);
+ text-align: center;
+ text-decoration: underline;
+}
+
+.content{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
+    height: 100%;
+    display: list-item;
+}
+#M1{
+    font-size: 1.2rem;
+    font-family: italic;
+    margin-left: 4rem;font-weight: 600;
+}
+#M2{
+    font-size: 1.2rem;
+    font-family: italic;
+    margin-left: 4rem;font-weight: 600;
+    margin-top: 1rem;
+}
+#link2{
+    text-align: right;
+    margin-left: 55rem;
+    font-size: large;
+    justify-content: right;
+    font-weight: bold;
+}
+@media screen and (max-width:900px)
+{.container5{
+    margin:auto;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color:white;}
+
+
+#header5{
+    font-size: 1.2rem;
+    border:3px solid white;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height:4.5rem;
+    width:100%;
+justify-content: center;
+    background-color:rgb(23, 169, 236);}
+    
+
+.Logo1{
+    height:1.5rem;
+    width:1.6rem;
+}
+.Logo2{
+    height:1.5rem;
+    width:1.6rem;
+}
+.content{
+    text-align: left;
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.3rem;
+}
+#heading5{
+    color: rgb(126, 72, 85);
+    text-align: center;
+    text-decoration: underline;
+    font-size:1rem
+   }
+#M1{
+    font-size: 1rem;
+    font-family: italic;
+    margin-top: 2rem;
+    margin-left: 0.4rem;
+    font-weight: 600;
+}
+#M2{
+    font-size: 1rem;
+    font-family: italic;
+    margin-left: 0.4rem;font-weight: 600;}
+    #link2{
+        text-align: right;
+        margin-left: 3rem;
+        font-size: medium;
+        justify-content: space-around;
+    }
+    
 }

@@ -2,6 +2,8 @@
 import react,{useState} from "react";
 import "./login.css";
 import CoWithYou from "./CoWithYou Logo.png"
+import "@chakra-ui/react"
+import {FormControl,Input,InputGroup } from "@chakra-ui/react";
 function Login()
 {var flag;
 
@@ -39,28 +41,32 @@ email,password
    return(<>
    <div className="container">
    <div id="header">
-        <img className="Logo1"src={CoWithYou}/>
-        Namsthey SAVES your life... Shake hand SHAKES your life... 
-        <img className="Logo2" src={CoWithYou}/>
+        <img id="Logo1"src={CoWithYou}/>
+        Namsthey SAVES your life...Shake hand SHAKES your life... 
+        <img id="Logo2" src={CoWithYou}/>
    </div>
-   <div className="FORM">
-          <form  class="form" method="POST" action="submit" >
-          <h3>Log In to CoWithYou</h3>
+   <div className="form1">
+          <form  class="FORM1" method="POST" action="submit" >
+          <h3 id="heading"> LogIn to CoWithYou</h3>
+         
           <div className="Email">
-          EMAIL
-              <input id="email" type="email" placeholder="Enter your E-mail"  value={email} onChange={(e)=>setEmail(e.target.value)}mt={'2'} />
-              </div>
+          E-MAIL</div>
+          <FormControl isRequired>
+            <InputGroup>
+              <Input id="e-mail" type="email" placeholder="Enter your E-mail"  value={email} onChange={(e)=>setEmail(e.target.value)}mt={'2'} />
+              </InputGroup></FormControl>
               <div className="Password">
-              PASSWORD
-              <input id="password" value={password} onChange={(e)=>setPassword(e.target.value)}type="password" placeholder="Enter your password"  mt={'2'} />
-              </div>
+              PASSWORD</div>
+              <FormControl isRequired><InputGroup>
+              <Input id="password" value={password} onChange={(e)=>setPassword(e.target.value)}type="password" placeholder="Enter your password"  mt={'2'} />
+              </InputGroup></FormControl>
               <div id="button">
             <button className="button" type={'submit'} onClick={LoginUser} size="larger" mt={'8'} >
               Sign In
             </button>
             </div>
-            <h4 style={{textAlign:"center",fontSize:"25px",textDecoration:"none"}}><a href="/SignUp">Or 
-            Register Now!!</a></h4>
+           <p id="link1"> <a href="/SignUp">Or
+            Register Now!!</a></p>
           </form>
           </div>
           </div>

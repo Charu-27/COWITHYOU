@@ -2,6 +2,8 @@ import react,{useState,useEffect} from "react";
 import "./SignUp.css"
 import CoWithYou from "./CoWithYou Logo.png"
 import {useHistory} from "react-router-dom"
+import "@chakra-ui/react"
+import {FormControl,Input,InputGroup, Button } from "@chakra-ui/react";
 const SignUp=()=>{
     var history=useHistory()
     const [user,setUser]=useState({
@@ -13,6 +15,7 @@ const SignUp=()=>{
     })
     let name,value
     const handleInputs=(e)=>{
+
         name=e.target.name;
         value=e.target.value
         if(!name||!value)
@@ -46,45 +49,52 @@ const SignUp=()=>{
     }
     return(
         <>
-        <div className="container" id="container">
-        <div id="header">
+        <div className="container2">
+        <div id="header2">
         <img className="Logo1"src={CoWithYou}></img>Namsthey SAVES your life... Shake hand SHAKES your life... 
         <img className="Logo2" src={CoWithYou}></img></div>
-        <div className="form" id="form">
-        <div id="head">
-        Register on CoWithYou
-        </div>
-                <form method="POST" className="form2" id="form2">
-                <div className="Details">
-                <div id="name">
-                NAME:-
-                    <input type="text" name="name"  placeholder="Enter your name" value={user.name}onChange={handleInputs}/>
-                    </div>
-                    <div id="email">
-                    EMAIL:-
-                    <input type="email" name="email" placeholder="Enter your email" value={user.email}onChange={handleInputs}/>
-                    </div>
-                    <div id="phone" >
-                    PHONE:-
-                    <input type="Number" name="phone"  placeholder="Enter your phone" value={user.phone}onChange={handleInputs}/>
-                    </div>
-                    <div id="PASSWORD">
-                    PASSWORD
-                    <input type="text" name="password" id="password" placeholder="Enter your password" value={user.password}onChange={handleInputs}/>
-                    </div>
-                    <div id="cpassword">
-                    CONFIRM PASSWORD
-                    <input type="text" name="cpassword" placeholder="Confirm your password" value={user.cpassword} onChange={handleInputs}/>
-                    </div>
-                    <div id="Submit">
-                    <input type="submit" name="signup" id="signup" className="form-submit" value="REGISTER" onClick={PostData}/>
-                    </div>
-                    <a href="/Login">Login</a>
+        
+            <form method="POST"  className="form2">
+               <div className="Details">
+               <p id="heading2">Register on CoWithYou</p>
+                <div id="name2">
+                NAME:- </div> 
+                <FormControl isRequired>
+            <InputGroup>
+                    <Input  type="text" name="name"  placeholder="Enter your name" value={user.name}onChange={handleInputs}/>
+                   </InputGroup></FormControl>
+                    <div id="email2">
+                    EMAIL:-  </div>
+                    <FormControl isRequired>
+            <InputGroup>
+                    <Input  type="email" name="email" placeholder="Enter your email" value={user.email}onChange={handleInputs}/>
+                  </InputGroup></FormControl>
+                    <div id="phone2" >
+                    PHONE:-</div>
+                    <FormControl isRequired>
+            <InputGroup>
+                    <Input type="Number" name="phone"  placeholder="Enter your phone" value={user.phone}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
+                    <div id="password2">
+                    PASSWORD</div>
+                    <FormControl isRequired>
+            <InputGroup>
+                    <Input  type="text" name="password" id="password" placeholder="Enter your password" value={user.password}onChange={handleInputs}/>
+                    </InputGroup></FormControl>
+                    <div id="cpassword2">
+                    CONFIRM PASSWORD </div>
+                    <FormControl isRequired>
+            <InputGroup>
+                    <Input  type="text" name="cpassword" placeholder="Confirm your password" value={user.cpassword} onChange={handleInputs}/>
+                  </InputGroup></FormControl>
+                    <div id="Submit"> 
+                    <input type='submit' name="signup" id="signup"  value="REGISTER" onClick={PostData} />
+                    <a href="/Login" text-align="center"> Back to Login</a> </div>
                     </div>
                 </form>
+               
             </div>
-</div>
-        </>
+            </>
     )
 }
-export default SignUp
+export default SignUp;

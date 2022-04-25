@@ -32,23 +32,28 @@ const Patient=()=>{
     },[])
     return(
         <>
-        <div className="Container1" id="Container1">
-        <div id="header1">
+         <div className="Container6" >
+        <div className="header6">
         <img className="Logo1"src={CoWithYou}></img>Namsthey SAVES your life... Shake hand SHAKES your life... 
-        <img className="Logo2" src={CoWithYou}></img>
-        </div>
-        <h1 id="intro">List of available Products..</h1>
-        <button id="MENU" onClick={()=>{window.location.href="/gateway"}}>Menu</button>
+        <img className="Logo2" src={CoWithYou}></img></div>
+        <div className="search_bar">
+        <input type="text" placeholder="Search.." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+         </div>
+        <button className="MENU" onClick={()=>{window.location.href="/gateway"}}>Back to menu</button>
+        <p id="intro">List of available Products</p>
+        <div className="image"></div>
+        
         {
             data.map((e)=>{
                 render(
-                    <div>
+                <div>
                     <Card Pname={e.Pname} PMD={e.PMD} PED={e.PED} Contact={e.Contact} Description={e.PDescription}/>
-                    </div>
+                  </div>  
                 )}
                     )
         }
-        </div>
+      </div>
         </>
     )
 }
